@@ -1,0 +1,76 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+
+::-webkit-input-placeholder {
+  color: #eee;
+}
+:-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #eee;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #eee;
+}
+.none {
+  display: none;
+}
+body {
+  background-color: #151515;
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 95vh;
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  text-align: right;
+}
+.heading h1 {
+  color: #2baf63;
+  margin-right: 3vh;
+  margin-top: 15vh;
+}
+.result {
+  position: absolute;
+}
+.result-link {
+  top: 50vh;
+  left: 50%;
+}
+.message {
+  position: absolute;
+  top: 10vh;
+  margin-left: 1vw;
+}
+.text-field {
+  background-color: #111;
+  border: solid 1px #2baf63;
+  padding: 15px 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50vw;
+}
+.button {
+  background-color: #111;
+  border: solid 1px #2baf63;
+  padding: 8px 25px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: #eee;
+  font-family: 'Share Tech Mono', monospace;
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+---
+# user: www-data
+# group: www-data
+pid: tmp/pids/thin.pid
+timeout: 30
+wait: 30
+log: log/thin.log
+max_conns: 1024
+require: []
+environment: production
+max_persistent_conns: 1024
+servers: 5
+threaded: true
+no-epoll: true
+daemonize: true
+# socket: tmp/sockets/thin.sock
+chdir: /usr/share/nginx/sbh/sbh-short-url
+tag: thin-sbh-short-url
+address: 0.0.0.0
+port: 4000
+threadpool_size: 20

@@ -1,0 +1,4 @@
+git checkout production
+git merge development
+git checkout development
+git push origin --all

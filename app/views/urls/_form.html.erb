@@ -1,0 +1,11 @@
+<div class="container">
+  <%= form_with(model: url, local: false, class: 'sbh-form') do |form| %>
+    <div class="heading">
+      <h1><%= APP_NAME %></h1>
+    </div>
+    <div class="message"></div>
+    <div class="result"></div>
+    <%= form.text_field :external_url, id: :url_external_url, class: 'text-field', autocomplete: 'off', placeholder: 'https://surabayablackhat.org/string', required: true  %>
+    <%= form.submit 'Sip Cuk', class: 'button' %>
+  <% end %>
+</div>
