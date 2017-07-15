@@ -1,0 +1,9 @@
+sudo: false
+language: ruby
+cache: bundler
+bundler_args: "--without production development"
+before_script: bin/setup
+script:
+- bin/rake db:test:prepare
+notifications:
+  email: false
