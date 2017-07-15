@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f45786e-69bd-4130-b388-7e983bc8cf7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/urls/taken.js.coffee" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/urls/_success.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/app.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/app.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/urls_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/urls_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/url.rb" afterPath="$PROJECT_DIR$/app/models/url.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/urls/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/urls/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/urls/create.js.coffee" afterPath="$PROJECT_DIR$/app/views/urls/create.js.coffee" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170614153048_create_urls.rb" afterPath="$PROJECT_DIR$/db/migrate/20170614153048_create_urls.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="2f45786e-69bd-4130-b388-7e983bc8cf7d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -886,12 +873,12 @@
       <workItem from="1499437543470" duration="1239000" />
       <workItem from="1499424604490" duration="253000" />
       <workItem from="1499424962269" duration="2132000" />
-      <workItem from="1500151180720" duration="3738000" />
+      <workItem from="1500151180720" duration="3797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47825000" />
+    <option name="totallyTimeSpent" value="47884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
