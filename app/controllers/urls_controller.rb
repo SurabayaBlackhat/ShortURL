@@ -13,12 +13,14 @@ class UrlsController < ApplicationController
   def create
     @url = Url.new(url_params)
 
-    if @url.save
-      @url.short_url = SecureRandom.urlsafe_base64(4)
-      @url.save
-    #   redirect_to urls_path, notice: 'Url was successfully created.'
-    # else
-    #   render :new
+    @taken = Url.find_by(external_url: params[:url][:external_url])
+    if @taken.present?
+      render :taken
+    else
+      if @url.save
+        @url.short_url = SecureRandom.urlsafe_base64(4)
+        @url.save
+      end
     end
   end
 

@@ -14,4 +14,7 @@ document.addEventListener("turbolinks:load", function() {
 
     $("img").addClass("img-responsive");
 
+    "console" in window && console.log("%cAre you BlackHat?",
+        "color: #2baf63; font-size: 5em; line-height: 2; font-family: Courier");
+
 });

@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170614153048) do
   create_table "urls", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "external_url"
     t.string "short_url"
-    t.integer "visited"
+    t.integer "visited", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["external_url"], name: "index_urls_on_external_url", unique: true

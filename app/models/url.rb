@@ -1,7 +1,6 @@
 class Url < ApplicationRecord
   validates :external_url,
-            presence: true,
-            uniqueness: true
+            presence: true
 
   validate :validate_format
 

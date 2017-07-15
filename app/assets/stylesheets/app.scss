@@ -35,15 +35,21 @@ body {
 }
 .result {
   position: absolute;
+  text-align: center;
+  width: 50vw;
+  left: 25%;
+  top: 45vh;
 }
 .result-link {
   top: 50vh;
   left: 50%;
+  color: #2baf63;
+  font-size: 15px;
+  background: #fff;
+  padding: 10px 20px;
 }
-.message {
-  position: absolute;
-  top: 10vh;
-  margin-left: 1vw;
+.result-link:hover {
+  color: #2baf63;
 }
 .text-field {
   background-color: #111;
@@ -54,7 +60,7 @@ body {
   color: #eee;
   font-family: 'Share Tech Mono', monospace;
   position: absolute;
-  top: 65vh;
+  top: 60vh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -69,7 +75,7 @@ body {
   color: #eee;
   font-family: 'Share Tech Mono', monospace;
   position: absolute;
-  top: 80vh;
+  top: 70vh;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
