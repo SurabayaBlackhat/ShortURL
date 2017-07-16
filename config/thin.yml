@@ -17,5 +17,5 @@ daemonize: true
 chdir: /usr/share/nginx/sbh/sbh-short-url
 tag: thin-sbh-short-url
 address: 0.0.0.0
-port: 4000
+port: 3000
 threadpool_size: 20

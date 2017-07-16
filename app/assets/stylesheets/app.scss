@@ -45,10 +45,10 @@ body {
   left: 50%;
   color: #2baf63;
   font-size: 15px;
-  background: #fff;
+  border: 1px solid #2baf63;
   padding: 10px 20px;
 }
-.result-link:hover {
+.result-link:hover, .result-link:focus {
   color: #2baf63;
 }
 .text-field {
