@@ -16,19 +16,19 @@ bundle install --without production
 #### Production environment:
 ```
 bundle install --deployment --without development test
-bundle exec rake db:migrate RAILS_ENV=production
-bundle exec rake assets:precompile RAILS_ENV=production
+rails db:migrate RAILS_ENV=production
+rails assets:precompile RAILS_ENV=production
 ```
 
 __Get key secure__
 ```
-rake secret RAILS_ENV=production
+rails secret RAILS_ENV=production
 ```
 
 #### Update source Production
 ```
-bundle exec rake db:migrate RAILS_ENV=production
-bundle exec rake assets:precompile RAILS_ENV=production
+bundle exec rails db:migrate RAILS_ENV=production
+bundle exec rails assets:precompile RAILS_ENV=production
 ```
 
 #### Database initialization:
@@ -41,8 +41,8 @@ rails db:seed
 
 #### Maintenance
 ```
-rake maintenance:start
-rake maintenance:end
+rails maintenance:start
+rails maintenance:end
 ```
 
 #### Character Set
