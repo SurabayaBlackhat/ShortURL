@@ -46,7 +46,7 @@ class UrlsController < ApplicationController
 
   private
     def set_url
-      @url = Url.find_by_short_url(params[:short_url])
+      @url = validate_params(Url.find_by_short_url(params[:short_url]))
     end
 
     def url_params
