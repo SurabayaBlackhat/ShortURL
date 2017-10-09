@@ -4,11 +4,11 @@ require 'net/http'
 class Url < ApplicationRecord
   validates :external_url, presence: true, uniqueness: true
   validates :short_url, uniqueness: true
-  validate :validate_format
+  validate :validate_uri
   before_create :set_short_url
 
   private
-    def validate_format
+    def validate_uri
       uri = self.external_url
       if DOMAIN_VALID.include?(URI.parse(uri).host)
         uri_code = URI(uri)
@@ -26,7 +26,7 @@ class Url < ApplicationRecord
           errors[:base] << "Saya bingung!"
         end
       else
-        errors[:base] << "URI hanya diperbolehkan dari sumber domain SBH"
+        errors[:base] << "URI tidak benar"
       end
     end
 
