@@ -1,8 +1,10 @@
 # SBH Short URL
 
-- Ruby version `2.3.3`
+## Technologies
+
+- Ruby version `2.4.1`
 - Rails version `5.1.1`
-- And more, you can see on `Gemfile`
+- And more, you can see on [Gemfile](Gemfile)
 
 ## Setup
 
@@ -27,21 +29,6 @@ rake secret RAILS_ENV=production
 ```
 bundle exec rake db:migrate RAILS_ENV=production
 bundle exec rake assets:precompile RAILS_ENV=production
-```
-
-#### Thin
-
-**Single Server**
-```
-ps aux | grep thin
-kill ID
-rails server thin -d -p 3000
-```
-
-**Multiple Servers (Cluster)**
-```
-thin stop -C config/thin.yml
-thin start -C config/thin.yml
 ```
 
 #### Database initialization:

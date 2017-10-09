@@ -39,7 +39,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'exception_notification'
   gem 'thin'
+  gem 'bigdecimal'
+  gem 'listen', '>= 3.0.5', '< 3.2'
 end
-# sdoc -o public/docs/sdoc -T direct rails
-gem 'sdoc'
+
 gem 'turnout'

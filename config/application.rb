@@ -32,11 +32,11 @@ module SBHShortUrl
     # config.i18n.default_locale = :id
 
     Turnout.configure do |config|
-      config.app_root = '.'
-      config.named_maintenance_file_paths = { default: config.app_root.join('tmp', 'maintenance.yml').to_s }
-      config.maintenance_pages_path = 'app/views/errors/maintenance'
+      config.app_root = "."
+      config.named_maintenance_file_paths = { default: config.app_root.join("tmp", "maintenance.yml").to_s }
+      config.maintenance_pages_path = "public"
       config.default_maintenance_page = Turnout::MaintenancePage::HTML
-      config.default_reason = 'SBH Short URL under maintenance.'
+      config.default_reason = ""
       config.default_allowed_paths = []
       config.default_response_code = 503
       config.default_retry_after = 7200
