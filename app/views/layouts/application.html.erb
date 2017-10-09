@@ -10,12 +10,12 @@
     <%= favicon_link_tag %>
     <meta name="robots" content="no-cache">
     <link rel="canonical" href="<%= request.original_url %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload', 'data-turbolinks-eval' => 'false' %>
   </head>
   <body>
     <%= yield %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload', 'data-turbolinks-eval' => 'false' %>
     <%= yield :assets %>
     <% if notice %>
       <script>

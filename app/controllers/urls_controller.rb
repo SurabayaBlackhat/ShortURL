@@ -12,14 +12,34 @@ class UrlsController < ApplicationController
 
   def create
     @url = Url.new(url_params)
-
-    @taken = Url.find_by(external_url: params[:url][:external_url])
+    @taken = Url.find_by(external_url: uri_last_str(params[:url][:external_url]))
     if @taken.present?
       render :taken
     else
+      @url.save
+    end
+  end
+
+  # README! => https://git.io/vd2Vb
+  def create_api
+    @url = Url.new(url_params)
+    @taken = Url.find_by(external_url: uri_last_str(params[:url][:external_url]))
+    if @taken.present?
+      render json: {
+        status: 302,
+        short_url: root_url + @taken.short_url
+      }
+    else
       if @url.save
-        @url.short_url = SecureRandom.urlsafe_base64(4)
-        @url.save
+        render json: {
+          status: 201,
+          short_url: root_url + @url.short_url
+        }
+      else
+        render json: {
+          status: 422,
+          error: @url.errors.full_messages.first
+        }
       end
     end
   end
