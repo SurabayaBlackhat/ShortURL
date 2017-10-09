@@ -5,6 +5,6 @@
     </div>
     <div class="result"></div>
     <%= form.text_field :external_url, id: :url_external_url, class: 'text-field', autocomplete: 'off', placeholder: 'https://surabayablackhat.org/string'  %>
-    <%= form.submit 'Submit', class: 'button' %>
+    <%= button_tag 'Submit', class: 'button', data: { disable_with: 'Please wait...' } %>
   <% end %>
 </div>
