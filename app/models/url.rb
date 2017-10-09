@@ -1,5 +1,6 @@
 class Url < ApplicationRecord
-  validates :external_url, presence: true
+  validates :external_url, presence: true, uniqueness: true
+  validates :short_url, uniqueness: true
   validate :validate_format
   before_create :set_short_url
 
