@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'net/http'
+require 'resolv-replace'
 
 class Url < ApplicationRecord
   validates :external_url, presence: true, uniqueness: true
